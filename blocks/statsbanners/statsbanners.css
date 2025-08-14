@@ -1,23 +1,44 @@
-.statsbanners {
-  display: flex;
-  justify-content: center;
-  gap: 40px; /* space between each stat item */
+/* Section wrapper */
+.section.statsbanners-container {
   padding: 40px 20px;
   background-color: #f8f9fa; /* light background */
 }
 
+/* Wrapper for centering content */
+.statsbanners-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main block layout */
+.statsbanners {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* wrap items on smaller screens */
+}
+
+/* Individual stat items */
 .statsbanners > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 8px;
-  background: #ffffff; /* white card look */
+  background: #ffffff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   min-width: 150px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Hover effect */
+.statsbanners > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Text inside stat cards */
 .statsbanners p {
   margin: 0;
 }
@@ -31,4 +52,15 @@
 .statsbanners p:last-child {
   font-size: 1rem;
   color: #6c757d;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .statsbanners {
+    gap: 20px;
+  }
+  
+  .statsbanners > div {
+    min-width: 100%;
+  }
 }
