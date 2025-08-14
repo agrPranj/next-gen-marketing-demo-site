@@ -1,24 +1,34 @@
-.stats-container {
+.statsbanners {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-  background: #f7f9fc;
+  gap: 40px; /* space between each stat item */
+  padding: 40px 20px;
+  background-color: #f8f9fa; /* light background */
 }
 
-.stat-item {
+.statsbanners > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  flex: 1 1 200px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #ffffff; /* white card look */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  min-width: 150px;
 }
 
-.stat-number {
-  font-size: 2rem;
+.statsbanners p {
+  margin: 0;
+}
+
+.statsbanners p:first-child {
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #0055a5;
+  color: #2c3e50;
 }
 
-.stat-label {
+.statsbanners p:last-child {
   font-size: 1rem;
-  color: #333;
+  color: #6c757d;
 }
