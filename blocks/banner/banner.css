@@ -1,0 +1,29 @@
+/* Banner Block Styles */
+
+.banner {
+  background-color: #f9fbff;
+  border-left: 4px solid #0056b3;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+}
+
+.banner-heading {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #002d62;
+}
+
+.banner-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.banner-item {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
