@@ -9,7 +9,7 @@
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
 }
 
 .features h3 {
@@ -25,4 +25,11 @@
 
 .features > div > div:first-child {
   font-size: 2rem;
+}
+
+/* Example media query (modern syntax) */
+@media (width <= 768px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
 }
