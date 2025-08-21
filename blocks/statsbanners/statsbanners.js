@@ -31,9 +31,9 @@ export default function decorate(block) {
   });
 
   // Block container metadata for Universal Editor
-  block.setAttribute(
+ /* block.setAttribute(
     'data-aue-resource',
     'urn:aemconnection:/content/insurance-poc/us/en/home-page/jcr:content/root/container_222319304/statsbanner'
-  );
+  );*/
   block.setAttribute('data-aue-type', 'container');
 }
