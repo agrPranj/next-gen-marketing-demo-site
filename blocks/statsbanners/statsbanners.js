@@ -36,3 +36,4 @@ export default function decorate(block) {
     'urn:aemconnection:/content/insurance-poc/us/en/home-page/jcr:content/root/container_222319304/statsbanner'
   );
   block.setAttribute('data-aue-type', 'container');
+}
