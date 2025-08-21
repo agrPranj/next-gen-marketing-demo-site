@@ -26,8 +26,8 @@
   text-align: center;
   padding: 20px 30px;
   border-radius: 8px;
-  background: #ffffff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
   min-width: 150px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -35,7 +35,7 @@
 /* Hover effect */
 .statsbanners > div:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
 }
 
 /* Text inside stat cards */
@@ -55,11 +55,11 @@
 }
 
 /* Mobile responsiveness */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .statsbanners {
     gap: 20px;
   }
-  
+
   .statsbanners > div {
     min-width: 100%;
   }
